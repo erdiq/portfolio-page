@@ -1,1 +1,313 @@
+/* =========================
+   GRUNDEINSTELLUNGEN
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #121212;
+    color: white;
+
+    min-height: 100vh;
+
+    padding: 40px;
+}
+
+/* =========================
+   GESAMTER CONTAINER
+========================= */
+
+.portfolio-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    gap: 40px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    background-color: #1e1e1e;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    height: fit-content;
+}
+
+/* Profilbild */
+
+.profile-image img {
+    width: 140px;
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* Name */
+
+.sidebar h1 {
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+/* Beruf */
+
+.profession {
+    color: #b5b5b5;
+
+    margin-bottom: 30px;
+
+    line-height: 1.5;
+}
+
+/* Informationen */
+
+.profile-info {
+    text-align: left;
+
+    border-top: 1px solid #333;
+
+    padding-top: 20px;
+}
+
+.profile-info p {
+    margin-bottom: 15px;
+
+    color: #cccccc;
+}
+
+/* Links */
+
+.profile-info a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    color: #7c9cff;
+}
+
+/* =========================
+   HAUPTBEREICH
+========================= */
+
+.main-content {
+    background-color: #1e1e1e;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    padding: 40px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+}
+
+.navbar a {
+    color: #cccccc;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #7c9cff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about h2,
+.what-i-do h2 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+/* Kleine Linie unter Titel */
+
+.title-line {
+    width: 50px;
+
+    height: 4px;
+
+    background-color: #7c9cff;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+/* Text */
+
+.about p {
+    color: #c5c5c5;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+    max-width: 750px;
+}
+
+/* =========================
+   WHAT I'M DOING
+========================= */
+
+.what-i-do {
+    margin-top: 50px;
+}
+
+/* Karten nebeneinander */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+/* Einzelne Karte */
+
+.card {
+    background-color: #252525;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    transition: 0.3s;
+}
+
+/* Hover Effekt */
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: #7c9cff;
+}
+
+/* Icon */
+
+.card-icon {
+    font-size: 40px;
+}
+
+/* Kartentitel */
+
+.card h3 {
+    font-size: 21px;
+
+    margin-bottom: 8px;
+}
+
+/* Kartentext */
+
+.card p {
+    color: #aaaaaa;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+}
+
+/* =========================
+   HANDY
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .what-i-do h2 {
+        font-size: 27px;
+    }
+
+}
