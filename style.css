@@ -472,3 +472,16 @@ body {
     }
 
 }
+.resume-section {
+    background-color: red !important;
+}
+
+.resume-item {
+    border: 2px solid yellow !important;
+}
+
+.dot {
+    background-color: lime !important;
+    width: 20px !important;
+    height: 20px !important;
+}
