@@ -1,1 +1,179 @@
+/* =========================
+   KONTAKT
+========================= */
 
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 650px;
+}
+
+
+/* =========================
+   KONTAKTFORMULAR
+========================= */
+
+.contact-form {
+    max-width: 700px;
+}
+
+
+/* Einzelnes Formularfeld */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+/* Beschriftung */
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    color: #dddddd;
+
+    font-weight: bold;
+}
+
+
+/* Eingabefelder */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    background-color: #252525;
+
+    color: white;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* Platzhalter-Text */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+}
+
+
+/* Wenn man in ein Feld klickt */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7c9cff;
+}
+
+
+/* Nachricht-Feld */
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+/* =========================
+   SENDEN-BUTTON
+========================= */
+
+.contact-button {
+    padding: 14px 25px;
+
+    background-color: #7c9cff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Hover-Effekt */
+
+.contact-button:hover {
+    transform: translateY(-3px);
+
+    opacity: 0.9;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================
+   SMARTPHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact h2 {
+        font-size: 27px;
+    }
+
+    .contact-intro {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+
+        font-size: 14px;
+    }
+
+    .contact-button {
+        width: 100%;
+
+        padding: 14px;
+    }
+
+}
