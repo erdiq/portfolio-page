@@ -177,3 +177,40 @@
     }
 
 }
+/* =========================
+   STANDORT / KARTE
+========================= */
+
+.location-section {
+    margin-top: 50px;
+}
+
+.location-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location-section p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+
+    border-radius: 15px;
+
+    border: 1px solid #3a3a3a;
+}
+
+
+/* SMARTPHONE */
+
+@media (max-width: 600px) {
+
+    #map {
+        height: 250px;
+    }
+
+}
