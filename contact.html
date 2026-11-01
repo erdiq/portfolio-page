@@ -177,24 +177,24 @@
     <!-- JavaScript für spätere Formularvalidierung -->
     <script src="js/contact.js"></script>
 
-    <!-- Leaflet JavaScript -->
+        <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <script>
-    const map = L.map('map').setView([46.758, 7.628], 13);
+        const map = L.map('map').setView([46.758, 7.628], 13);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap'
-    }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(map);
 
-    L.marker([46.758, 7.628])
-        .addTo(map)
-        .bindPopup('Thun, Schweiz')
-        .openPopup();
-</script>
+        L.marker([46.758, 7.628])
+            .addTo(map)
+            .bindPopup('Thun, Schweiz')
+            .openPopup();
+    </script>
 
-<script src="js/contact.js"></script>
-    
+    <script src="js/contact.js"></script>
+
 </body>
 
 </html>
