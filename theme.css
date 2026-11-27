@@ -1,1 +1,131 @@
+/* =========================
+   THEME BUTTON
+========================= */
 
+.theme-toggle {
+    background: none;
+    border: 1px solid #444;
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 6px 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    border-color: #7c9cff;
+}
+
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+
+/* Hauptbereiche */
+
+body.light-mode .sidebar,
+body.light-mode .main-content {
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+
+/* Navigation */
+
+body.light-mode .navbar a {
+    color: #222222;
+}
+
+
+/* normale Texte */
+
+body.light-mode p {
+    color: #555555;
+}
+
+
+/* Überschriften */
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4 {
+    color: #222222;
+}
+
+
+/* Skill- und Tätigkeitskarten */
+
+body.light-mode .card,
+body.light-mode .skill-card,
+body.light-mode .language-card {
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+}
+
+
+/* Skill-Texte */
+
+body.light-mode .skill-card p {
+    color: #222222;
+}
+
+
+/* Werdegang */
+
+body.light-mode .resume-content h4 {
+    color: #222222;
+}
+
+body.light-mode .resume-content p,
+body.light-mode .resume-date {
+    color: #555555;
+}
+
+
+/* Kontaktformular */
+
+body.light-mode .form-group label {
+    color: #333333;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background-color: #f5f5f5;
+    color: #222222;
+    border-color: #cccccc;
+}
+
+
+/* Fortschrittsbalken */
+
+body.light-mode .language-bar {
+    background-color: #dddddd;
+}
+
+
+/* Sidebar Links */
+
+body.light-mode .profile-info a {
+    color: #222222;
+}
+
+
+/* Theme Button */
+
+body.light-mode .theme-toggle {
+    color: #222222;
+    border-color: #cccccc;
+}
